@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exploração Abissal</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+
+  <!-- 🔥 TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- PROFUNDIDADE -->
+<div id="depth" class="fixed top-3 left-3 bg-black/60 text-white px-3 py-2 rounded-lg font-bold z-50">
+  0 m
+</div>
+
+<!-- OCEANO -->
+<div id="ocean"></div>
+
+<!-- CANVAS (ORDEM CORRETA) -->
+<canvas id="particles"></canvas>
+<canvas id="water3d"></canvas> <!-- 🔥 AGORA NO LUGAR CERTO -->
+<canvas id="stars"></canvas>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <button id="close">✖</button>
+  <h2 id="title"></h2>
+  <p id="desc">Você pode escrever a descrição aqui depois.</p>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
